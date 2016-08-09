@@ -1,0 +1,5 @@
+# -*- mode: snippet; coding: utf-8 -*-
+#name : (current date)
+# --
+`(let ((system-time-locale "ja_JP.UTF-8"))
+  (format-time-string "%Y.%m.%d (%a)"))`

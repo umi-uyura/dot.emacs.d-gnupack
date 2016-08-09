@@ -1,0 +1,4 @@
+#name : (current time)
+# --
+`(let ((system-time-locale "ja_JP.eucJP"))
+  (format-time-string "%H:%M:%S"))`
