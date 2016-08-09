@@ -7,6 +7,7 @@ My .emacs for [gnupack](http://gnupack.osdn.jp/) 's Emacs.
 Additional packages
 --------------------
 
+* ample-zen-theme
 * google-translate
 * gradle-mode
 * jdee
