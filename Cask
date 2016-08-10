@@ -33,3 +33,4 @@
 (depends-on "js2-mode")
 (depends-on "markdown-mode")
 (depends-on "open-junk-file")
+(depends-on "undo-tree")
