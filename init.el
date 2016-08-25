@@ -532,7 +532,7 @@
 ;; emacs-server起動
 (require 'server)
 (defun server-ensure-safe-dir (dir) "Noop" t)
-(setq server-socket-dir "~/.emacs.d")
+(setq server-socket-dir "~/.emacs.d/var")
 (unless (server-running-p)
   (server-start)
   )
