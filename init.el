@@ -585,7 +585,7 @@
 
 (require 'open-junk-file)
 
-(define-key global-map (kbd "C-c C-j") 'open-junk-file)
+(define-key global-map (kbd "C-c J") 'open-junk-file)
 
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
