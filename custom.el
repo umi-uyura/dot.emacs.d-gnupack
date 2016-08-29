@@ -6,6 +6,7 @@
  '(ag-highlight-search t)
  '(ag-reuse-buffers t)
  '(bookmark-default-file "~/.emacs.d/var/bookmarks")
+ '(confirm-kill-emacs (quote y-or-n-p))
  '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
  '(custom-enabled-themes (quote (ample-zen)))
