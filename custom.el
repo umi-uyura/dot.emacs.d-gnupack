@@ -17,6 +17,7 @@
  '(dired-dwim-target t)
  '(global-hl-line-mode t)
  '(global-undo-tree-mode t)
+ '(global-whitespace-mode t)
  '(google-translate-default-source-language "en")
  '(google-translate-default-target-language "ja")
  '(indent-tabs-mode nil)
@@ -38,6 +39,10 @@
  '(truncate-lines t)
  '(truncate-partial-width-windows nil)
  '(visible-bell t)
+ '(whitespace-action (quote (auto-cleanup)))
+ '(whitespace-style
+   (quote
+    (trailing space-before-tab indentation empty space-after-tab)))
  '(yas-global-mode t nil (yasnippet))
  '(yas-snippet-dirs
    (quote

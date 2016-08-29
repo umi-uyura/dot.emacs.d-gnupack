@@ -594,6 +594,14 @@
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . gfm-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode))
 
+;; Hooks
+(defun my-markdown-mode-hook ()
+  (set (make-local-variable 'whitespace-style)
+       (quote
+        (face space-before-tab indentation empty space-after-tab)))
+  )
+(add-hook 'markdown-mode-hook 'my-markdown-mode-hook)
+
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
 ;;; @ magit                                                         ;;;
