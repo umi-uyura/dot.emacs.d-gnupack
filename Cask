@@ -34,3 +34,5 @@
 (depends-on "markdown-mode")
 (depends-on "open-junk-file")
 (depends-on "undo-tree")
+(depends-on "ag")
+(depends-on "wgrep-ag")
