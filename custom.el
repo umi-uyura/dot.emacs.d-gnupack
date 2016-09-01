@@ -39,6 +39,11 @@
  '(truncate-lines t)
  '(truncate-partial-width-windows nil)
  '(visible-bell t)
+ '(web-mode-css-indent-offset 2)
+ '(web-mode-enable-current-column-highlight t)
+ '(web-mode-enable-current-element-highlight t)
+ '(web-mode-markup-indent-offset 2)
+ '(web-mode-sql-indent-offset 2)
  '(whitespace-action (quote (auto-cleanup)))
  '(whitespace-style
    (quote
