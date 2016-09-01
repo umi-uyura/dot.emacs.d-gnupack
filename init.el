@@ -223,7 +223,7 @@
 (setq eol-mnemonic-dos       ":Dos ")
 (setq eol-mnemonic-mac       ":Mac ")
 (setq eol-mnemonic-unix      ":Unx ")
-(setq eol-mnemonic-undecided ":??? ") 
+(setq eol-mnemonic-undecided ":??? ")
 
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
