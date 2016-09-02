@@ -7,6 +7,8 @@
  '(ag-highlight-search t)
  '(ag-reuse-buffers t)
  '(bookmark-default-file "~/.emacs.d/var/bookmarks")
+ '(browse-url-chromium-program
+   "/c/Program Files (x86)/Google/Chrome/Application/chrome.exe")
  '(confirm-kill-emacs (quote y-or-n-p))
  '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
