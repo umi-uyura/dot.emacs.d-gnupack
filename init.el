@@ -30,6 +30,9 @@
   (normal-top-level-add-subdirs-to-load-path)
   )
 
+;; add load-path
+(add-to-list 'load-path "~/.emacs.d/lisp")
+
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
 ;;; @ Cask                                                          ;;;
@@ -677,6 +680,16 @@
 
 (global-set-key (kbd "C-c g t") 'google-translate-at-point)
 (global-set-key (kbd "C-c g T") 'google-translate-smooth-translate)
+
+
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
+;;; @ win-open-folder                                               ;;;
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
+
+(load "win-open-folder")
+(define-key global-map (kbd "C-c o f") 'open-explorer)
+(define-key global-map (kbd "C-c o t") 'open-cmd)
+(define-key global-map (kbd "C-c o i") 'open-cygwin)
 
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
