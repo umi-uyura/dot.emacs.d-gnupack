@@ -36,3 +36,4 @@
 (depends-on "undo-tree")
 (depends-on "ag")
 (depends-on "wgrep-ag")
+(depends-on "visual-regexp")
