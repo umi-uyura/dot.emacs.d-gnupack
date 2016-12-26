@@ -37,3 +37,4 @@
 (depends-on "ag")
 (depends-on "wgrep-ag")
 (depends-on "visual-regexp")
+(depends-on "ripgrep")
