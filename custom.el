@@ -33,6 +33,7 @@
  '(js2-mode-show-strict-warnings nil)
  '(markdown-open-command "cygstart")
  '(open-junk-file-directory "~/.emacs.d/var/junk/%Y-%m-%d-%H%M%S." t)
+ '(python-indent-offset 2)
  '(read-buffer-completion-ignore-case t)
  '(recentf-max-saved-items 3000)
  '(recentf-mode t)
