@@ -18,6 +18,7 @@
     ("1db337246ebc9c083be0d728f8d20913a0f46edc0a00277746ba411c149d7fe5" default)))
  '(delete-selection-mode t)
  '(dired-dwim-target t)
+ '(global-flycheck-mode t)
  '(global-hl-line-mode t)
  '(global-undo-tree-mode t)
  '(global-whitespace-mode t)
