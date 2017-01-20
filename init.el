@@ -631,6 +631,20 @@
 
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
+;;; @ flycheck                                                      ;;;
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
+
+(with-eval-after-load 'flycheck
+  (defconst flycheck-error-list-format
+    `[("Line" 4 flycheck-error-list-entry-< :right-align t)
+      ("Col" 3 nil :right-align t)
+      ("Level" 8 flycheck-error-list-entry-level-<)
+      ("ID" 28 t)
+      (,(flycheck-error-list-make-last-column "Message" 'Checker) 0 t)]
+    "Table format for the error list."))
+
+
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
 ;;; @ jdee                                                          ;;;
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
 
