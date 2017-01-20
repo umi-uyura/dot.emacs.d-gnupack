@@ -9,7 +9,7 @@
  '(bookmark-default-file "~/.emacs.d/var/bookmarks")
  '(browse-url-chromium-program
    "/c/Program Files (x86)/Google/Chrome/Application/chrome.exe")
- '(confirm-kill-emacs (quote y-or-n-p))
+ '(confirm-kill-emacs nil)
  '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
  '(custom-enabled-themes (quote (ample-zen)))
