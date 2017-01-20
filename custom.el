@@ -47,7 +47,7 @@
  '(tab-width 2)
  '(truncate-lines t)
  '(truncate-partial-width-windows nil)
- '(url-cache-directory "/home/.emacs.d/var/url/cache")
+ '(url-cache-directory "~/.emacs.d/var/url/cache")
  '(url-configuration-directory "~/.emacs.d/var/url/")
  '(visible-bell t)
  '(web-mode-css-indent-offset 2)
