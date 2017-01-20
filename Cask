@@ -35,6 +35,7 @@
 (depends-on "open-junk-file")
 (depends-on "undo-tree")
 (depends-on "ag")
+(depends-on "pt")
 (depends-on "wgrep-ag")
 (depends-on "visual-regexp")
 (depends-on "ripgrep")
