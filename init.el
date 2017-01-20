@@ -99,14 +99,13 @@
 
 ;; IME変更
 (global-set-key (kbd "C-\\") 'toggle-input-method)
-(global-set-key (kbd "<convert>") 'toggle-input-method)
-;; (global-set-key (kbd "<kanji>") 'toggle-input-method)
-;; (global-set-key (kbd "<copy>") 'toggle-input-method)
-
+(global-set-key (kbd "<convert>") 'toggle-input-method)       ;; 変換キー
+(global-set-key (kbd "<non-convert>") 'toggle-input-method)   ;; 無変換キー
+(global-set-key (kbd "<kanji>") 'toggle-input-method)         ;; 半角/全角キー
 
 ;; 漢字/変換キー入力時のエラーメッセージ抑止
-(global-set-key (kbd "<M-kanji>") 'ignore)
-(global-set-key (kbd "<kanji>") 'ignore)
+;; (global-set-key (kbd "<M-kanji>") 'ignore)
+;; (global-set-key (kbd "<kanji>") 'ignore)
 
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
