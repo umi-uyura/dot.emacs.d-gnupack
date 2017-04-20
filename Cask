@@ -32,6 +32,7 @@
 (depends-on "jdee")
 (depends-on "js2-mode")
 (depends-on "markdown-mode")
+(depends-on "markdown-toc")
 (depends-on "open-junk-file")
 (depends-on "undo-tree")
 (depends-on "ag")
