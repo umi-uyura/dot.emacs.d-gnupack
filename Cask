@@ -31,6 +31,7 @@
 (depends-on "gradle-mode")
 (depends-on "jdee")
 (depends-on "js2-mode")
+(depends-on "json-mode")
 (depends-on "markdown-mode")
 (depends-on "markdown-toc")
 (depends-on "open-junk-file")
