@@ -17,6 +17,8 @@
 ;; Software Foundation, Inc., 59 Temple Place - Suite 330, Boston,
 ;; MA 02111-1307, USA.
 
+;;; Commentary:
+
 ;;; Code:
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
@@ -358,6 +360,9 @@
 ;;; @ search - migemo                                               ;;;
 ;;;   https://github.com/emacs-jp/migemo                            ;;;
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
+
+(setq search-default-mode nil)
+(setq search-default-regexp-mode nil)
 
 (require 'migemo)
 
@@ -731,10 +736,10 @@
 (load-file custom-file)
 
 
+;;; (provide 'init)
+;;; init.el ends here
 
 ;; Local Variables:
 ;; coding: utf-8
 ;; mode: emacs-lisp
 ;; End:
-
-;;; ends here
