@@ -36,6 +36,9 @@
  '(js2-mode-show-strict-warnings nil)
  '(markdown-open-command "cygstart")
  '(open-junk-file-directory "~/.emacs.d/var/junk/%Y-%m-%d-%H%M%S." t)
+ '(package-selected-packages
+   (quote
+    (yasnippet wgrep-ag web-mode visual-regexp use-package undo-tree smex smartparens ripgrep pt projectile prodigy popwin pallet open-junk-file nyan-mode multiple-cursors markdown-toc magit json-mode js2-mode jdee idle-highlight-mode htmlize gradle-mode google-translate flycheck-cask expand-region exec-path-from-shell drag-stuff dashboard ample-zen-theme ag)))
  '(projectile-cache-file "~/.emacs.d/var/projectile/projectile.cache")
  '(projectile-known-projects-file "~/.emacs.d/var/projectile/projectile-bookmarks.eld")
  '(projectile-mode t nil (projectile))
