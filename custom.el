@@ -35,6 +35,7 @@
  '(js2-include-jslint-globals nil)
  '(js2-mode-show-parse-errors nil)
  '(js2-mode-show-strict-warnings nil)
+ '(json-reformat:indent-width 2)
  '(markdown-open-command "cygstart")
  '(open-junk-file-directory "~/.emacs.d/var/junk/%Y-%m-%d-%H%M%S." t)
  '(package-selected-packages
