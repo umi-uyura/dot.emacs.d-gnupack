@@ -679,7 +679,10 @@
 (add-to-list 'auto-mode-alist '("\\.jmk\\'" . js2-mode))        ; for Appcelerator Alloy JS Makefile
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))      ; for Shell Scripts running via node.js
 
-;(add-hook 'js-mode-hook 'js2-minor-mode)		; for JavaScript linting
+(add-hook 'js-mode-hook
+          (lambda ()
+            (make-local-variable 'js-indent-level)
+            (setq js-indent-level 2)))
 
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
