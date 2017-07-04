@@ -638,6 +638,9 @@
 ;; 今居るhunkの行内の差分に色付けする
 (setq magit-diff-refine-hunk t)
 
+;; magit-logが文字化けする対策
+(add-to-list 'process-coding-system-alist '("git" utf-8-unix . utf-8-unix))
+
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
 ;;; @ flycheck                                                      ;;;
