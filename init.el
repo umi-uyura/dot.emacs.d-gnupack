@@ -209,6 +209,7 @@
      (format "L%%l/L%d " (count-lines (point-max) 1) )))
    (column-number-mode " C%c ")
    (-3 . "%p")
+   (:eval (flycheck-mode-line-status-text))
    )
  )
 (setq mode-line-frame-identification " ")
