@@ -25,6 +25,7 @@
  '(global-whitespace-mode t)
  '(google-translate-default-source-language "en")
  '(google-translate-default-target-language "ja")
+ '(google-translate-pop-up-buffer-set-focus t)
  '(grep-find-command "/usr/bin/find")
  '(indent-tabs-mode nil)
  '(initial-major-mode (quote text-mode))
