@@ -43,3 +43,4 @@
 (depends-on "visual-regexp")
 (depends-on "ripgrep")
 (depends-on "dashboard")
+(depends-on "pocket-mode")

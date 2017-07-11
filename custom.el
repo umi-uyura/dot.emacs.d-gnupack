@@ -41,7 +41,9 @@
  '(open-junk-file-directory "~/.emacs.d/var/junk/%Y-%m-%d-%H%M%S." t)
  '(package-selected-packages
    (quote
-    (migemo yasnippet wgrep-ag web-mode visual-regexp use-package undo-tree smex smartparens ripgrep pt projectile prodigy popwin pallet open-junk-file nyan-mode multiple-cursors markdown-toc magit json-mode js2-mode jdee idle-highlight-mode htmlize gradle-mode google-translate flycheck-cask expand-region exec-path-from-shell drag-stuff dashboard ample-zen-theme ag)))
+    (pocket-mode migemo yasnippet wgrep-ag web-mode visual-regexp use-package undo-tree smex smartparens ripgrep pt projectile prodigy popwin pallet open-junk-file nyan-mode multiple-cursors markdown-toc magit json-mode js2-mode jdee idle-highlight-mode htmlize gradle-mode google-translate flycheck-cask expand-region exec-path-from-shell drag-stuff dashboard ample-zen-theme ag)))
+ '(pocket-auto-refresh t)
+ '(pocket-items-per-page 80)
  '(projectile-cache-file "~/.emacs.d/var/projectile/projectile.cache")
  '(projectile-known-projects-file "~/.emacs.d/var/projectile/projectile-bookmarks.eld")
  '(projectile-mode t nil (projectile))
