@@ -34,6 +34,7 @@
 (depends-on "ensime")
 (depends-on "js2-mode")
 (depends-on "json-mode")
+(depends-on "pug-mode")
 (depends-on "markdown-mode")
 (depends-on "markdown-toc")
 (depends-on "open-junk-file")
