@@ -56,6 +56,7 @@
  '(recentf-mode t)
  '(recentf-save-file "~/.emacs.d/var/recentf")
  '(sbt:program-name "cygsbt")
+ '(scala-indent:use-javadoc-style t)
  '(show-paren-mode t)
  '(tab-width 2)
  '(truncate-lines t)
