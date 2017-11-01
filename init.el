@@ -622,6 +622,7 @@
 
 ;; Hooks
 (defun my-markdown-mode-hook ()
+  (setq tab-width 2)
   (set (make-local-variable 'whitespace-style)
        (quote
         (face space-before-tab indentation empty space-after-tab)))
