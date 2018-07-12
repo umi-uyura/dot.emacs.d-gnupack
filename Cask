@@ -38,6 +38,8 @@
 (depends-on "json-mode")
 (depends-on "web-beautify")
 (depends-on "pug-mode")
+(depends-on "sass-mode")
+(depends-on "less-css-mode")
 (depends-on "markdown-mode")
 (depends-on "markdown-toc")
 (depends-on "open-junk-file")
