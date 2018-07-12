@@ -35,6 +35,7 @@
 (depends-on "jdee")
 (depends-on "ensime")
 (depends-on "js2-mode")
+(depends-on "js-doc")
 (depends-on "json-mode")
 (depends-on "web-beautify")
 (depends-on "pug-mode")
