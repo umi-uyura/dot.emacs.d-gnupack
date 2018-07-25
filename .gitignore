@@ -1,3 +1,4 @@
+/site-lisp
 /site-start.d/*.el
 /var/*
 !.gitkeep
@@ -48,3 +49,9 @@ flycheck_*.el
 
 # projectiles files
 .projectile
+
+# directory configuration
+.dir-locals.el
+
+
+# End of https://www.gitignore.io/api/emacs
