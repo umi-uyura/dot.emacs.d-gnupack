@@ -25,11 +25,11 @@
 (depends-on "use-package")
 (depends-on "web-mode")
 (depends-on "yasnippet")
-(depends-on "migemo")
+; (depends-on "migemo")
 
 (depends-on "ample-zen-theme")
 (depends-on "emojify")
-(depends-on "emacs-emoji-cheat-sheet-plus")
+; (depends-on "emacs-emoji-cheat-sheet-plus")
 (depends-on "google-translate")
 (depends-on "gradle-mode")
 (depends-on "jdee")
