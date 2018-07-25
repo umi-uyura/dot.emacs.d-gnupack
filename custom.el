@@ -79,10 +79,10 @@
  '(whitespace-style
    (quote
     (trailing space-before-tab indentation empty space-after-tab)))
- '(yas-global-mode t nil (yasnippet))
+ '(yas-global-mode t)
  '(yas-snippet-dirs
    (quote
-    ("~/.emacs.d/etc/snippets" "~/.emacs.d/site-lisp/yasnippet/snippets" yas-installed-snippets-dir)) nil (yasnippet)))
+    ("~/.emacs.d/etc/snippets" "~/.emacs.d/site-lisp/yasnippet/snippets"))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
