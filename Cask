@@ -37,6 +37,7 @@
 (depends-on "js2-mode")
 (depends-on "js-doc")
 (depends-on "json-mode")
+(depends-on "yaml-mode")
 (depends-on "web-beautify")
 (depends-on "pug-mode")
 (depends-on "sass-mode")
