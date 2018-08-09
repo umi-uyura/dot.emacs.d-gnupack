@@ -15,7 +15,7 @@
  '(custom-enabled-themes (quote (ample-zen)))
  '(custom-safe-themes
    (quote
-    ("1db337246ebc9c083be0d728f8d20913a0f46edc0a00277746ba411c149d7fe5" default)))
+    ("2a7beed4f24b15f77160118320123d699282cbf196e0089f113245d4b729ba5d" "1db337246ebc9c083be0d728f8d20913a0f46edc0a00277746ba411c149d7fe5" default)))
  '(delete-selection-mode t)
  '(dired-dwim-target t)
  '(emojify-emojis-dir "~/.emacs.d/var/emojis")
@@ -48,7 +48,7 @@
  '(open-junk-file-directory "~/.emacs.d/var/junk/%Y-%m-%d-%H%M%S." t)
  '(package-selected-packages
    (quote
-    (yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt pocket-mode open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
+    (restclient yaml-mode yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt pocket-mode open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
  '(pocket-auto-refresh t)
  '(pocket-items-per-page 80)
  '(projectile-cache-file "~/.emacs.d/var/projectile/projectile.cache")
