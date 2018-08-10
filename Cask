@@ -25,6 +25,7 @@
 (depends-on "use-package")
 (depends-on "web-mode")
 (depends-on "yasnippet")
+(depends-on "yasnippet-snippets")
 ; (depends-on "migemo")
 
 (depends-on "ample-zen-theme")

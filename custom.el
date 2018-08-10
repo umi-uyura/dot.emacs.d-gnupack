@@ -80,7 +80,7 @@
  '(yas-global-mode t)
  '(yas-snippet-dirs
    (quote
-    ("~/.emacs.d/etc/snippets" "~/.emacs.d/site-lisp/yasnippet/snippets"))))
+    ("~/.emacs.d/etc/snippets" "~/.emacs.d/site-lisp/yasnippet/snippets" yasnippet-snippets-dir))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
