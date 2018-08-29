@@ -48,7 +48,7 @@
  '(open-junk-file-directory "~/.emacs.d/var/junk/%Y-%m-%d-%H%M%S." t)
  '(package-selected-packages
    (quote
-    (restclient yaml-mode yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt pocket-mode open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
+    (kotlin-mode restclient yaml-mode yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt pocket-mode open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
  '(pocket-auto-refresh t)
  '(pocket-items-per-page 80)
  '(projectile-cache-file "~/.emacs.d/var/projectile/projectile.cache")
