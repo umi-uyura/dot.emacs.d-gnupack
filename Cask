@@ -54,4 +54,4 @@
 (depends-on "ripgrep")
 (depends-on "restclient")
 (depends-on "dashboard")
-(depends-on "pocket-mode")
+(depends-on "pocket-reader")
