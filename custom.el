@@ -17,6 +17,7 @@
    (quote
     ("2a7beed4f24b15f77160118320123d699282cbf196e0089f113245d4b729ba5d" "1db337246ebc9c083be0d728f8d20913a0f46edc0a00277746ba411c149d7fe5" default)))
  '(delete-selection-mode t)
+ '(dired-dnd-protocol-alist nil)
  '(dired-dwim-target t)
  '(emojify-emojis-dir "~/.emacs.d/var/emojis")
  '(ensime-sbt-command "cygsbt")
