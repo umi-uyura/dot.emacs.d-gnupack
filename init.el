@@ -751,6 +751,15 @@
 (load-file custom-file)
 
 
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
+;;; @ site settings                                                 ;;;
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
+
+(setq site-setting-file "~/.emacs.d/site-start.d/site-start.el")
+(if (file-exists-p site-setting-file)
+    (load site-setting-file))
+
+
 ;;; (provide 'init)
 ;;; init.el ends here
 
