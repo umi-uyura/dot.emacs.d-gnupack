@@ -58,6 +58,7 @@
  '(read-buffer-completion-ignore-case t)
  '(recentf-max-saved-items 3000)
  '(recentf-save-file "~/.emacs.d/var/recentf")
+ '(ripgrep-arguments (quote ("--sort path")))
  '(sbt:program-name "cygsbt")
  '(scala-indent:use-javadoc-style t)
  '(sh-basic-offset 2)
