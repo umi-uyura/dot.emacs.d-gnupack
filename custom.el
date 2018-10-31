@@ -52,6 +52,7 @@
     (pocket-reader kotlin-mode restclient yaml-mode yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
  '(pocket-reader-color-site nil)
  '(pocket-reader-color-title nil)
+ '(pocket-reader-show-count 100)
  '(projectile-cache-file "~/.emacs.d/var/projectile/projectile.cache")
  '(projectile-known-projects-file "~/.emacs.d/var/projectile/projectile-bookmarks.eld")
  '(python-indent-offset 2)
