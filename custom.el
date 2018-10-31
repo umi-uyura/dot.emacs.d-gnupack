@@ -10,6 +10,9 @@
  '(browse-url-chromium-program
    "/c/Program Files (x86)/Google/Chrome/Application/chrome.exe")
  '(confirm-kill-emacs nil)
+ '(crowi-attachment-save-path "~/.emacs.d/var/crowi/")
+ '(crowi-markdown-save nil)
+ '(crowi-markdown-save-path "~/.emacs.d/var/crowi/")
  '(cua-enable-cua-keys nil)
  '(cua-mode t nil (cua-base))
  '(custom-enabled-themes (quote (ample-zen)))
