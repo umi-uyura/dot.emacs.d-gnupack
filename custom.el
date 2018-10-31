@@ -84,6 +84,7 @@
    (quote
     (trailing space-before-tab indentation empty space-after-tab)))
  '(yas-global-mode t)
+ '(yas-prompt-functions nil)
  '(yas-snippet-dirs
    (quote
     ("~/.emacs.d/etc/snippets" "~/.emacs.d/site-lisp/yasnippet/snippets" yasnippet-snippets-dir))))
