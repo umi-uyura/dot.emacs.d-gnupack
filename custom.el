@@ -23,6 +23,7 @@
  '(dired-dnd-protocol-alist nil)
  '(dired-dwim-target t)
  '(emojify-emojis-dir "~/.emacs.d/var/emojis")
+ '(emojify-program-contexts (quote (comments)))
  '(ensime-sbt-command "cygsbt")
  '(ensime-startup-notification nil)
  '(ensime-startup-snapshot-notification nil)
