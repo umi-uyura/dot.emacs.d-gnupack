@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Class private variable
+# key: t_
+# --
+this._$1

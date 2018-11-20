@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: Constructor argment
+# key: this_
+# --
+this._$1 = $1
