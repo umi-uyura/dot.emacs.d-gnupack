@@ -1,0 +1,17 @@
+#!/bin/sh
+
+#
+# 作業ログ検索 (Worklog search)
+#
+# Emacsで作成した作業ログ内から検索する
+#
+# Usage:
+#  wls [option] keyword
+#
+#  option example:
+#  - "--color never" ... 出力の色設定を無効化
+#
+
+WORKLOG_DIR=$(cygpath -w "$EMACS_HOME/var/junk/worklog")
+
+rg --no-heading --vimgrep -n --color=always --ignore-case $2 -- "$1" "$WORKLOG_DIR"
