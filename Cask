@@ -31,6 +31,7 @@
 (depends-on "ample-zen-theme")
 (depends-on "emojify")
 ; (depends-on "emacs-emoji-cheat-sheet-plus")
+(depends-on "highlight-indent-guides")
 (depends-on "google-translate")
 (depends-on "gradle-mode")
 (depends-on "jdee")
