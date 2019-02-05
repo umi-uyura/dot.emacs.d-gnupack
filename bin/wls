@@ -12,6 +12,14 @@
 #  - "--color never" ... 出力の色設定を無効化
 #
 
+WLS_OPTIONS=""
+
+if [ "$INSIDE_EMACS" = "" ]; then
+  WLS_OPTIONS="--color never"
+else
+  WLS_OPTIONS="--color always"
+fi
+
 WORKLOG_DIR=$(cygpath -w "$EMACS_HOME/var/junk/worklog")
 
-rg --no-heading --vimgrep -n --color=always --ignore-case $2 -- "$1" "$WORKLOG_DIR"
+rg --no-heading --vimgrep -n --ignore-case $WLS_OPTIONS $2 -- "$1" "$WORKLOG_DIR"
