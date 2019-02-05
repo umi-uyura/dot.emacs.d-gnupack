@@ -46,6 +46,7 @@
 (depends-on "less-css-mode")
 (depends-on "markdown-mode")
 (depends-on "markdown-toc")
+(depends-on "textile")
 (depends-on "open-junk-file")
 (depends-on "undo-tree")
 (depends-on "ag")
