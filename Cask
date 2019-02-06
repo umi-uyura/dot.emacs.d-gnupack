@@ -54,6 +54,7 @@
 (depends-on "wgrep-ag")
 (depends-on "visual-regexp")
 (depends-on "ripgrep")
+(depends-on "itail")
 (depends-on "restclient")
 (depends-on "dashboard")
 (depends-on "pocket-reader")

@@ -53,7 +53,7 @@
  '(open-junk-file-directory "~/.emacs.d/var/junk/%Y-%m-%d-%H%M%S." t)
  '(package-selected-packages
    (quote
-    (textile-mode highlight-indent-guides pocket-reader kotlin-mode restclient yaml-mode yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
+    (itail textile-mode highlight-indent-guides pocket-reader kotlin-mode restclient yaml-mode yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
  '(pocket-reader-color-site nil)
  '(pocket-reader-color-title nil)
  '(pocket-reader-show-count 100)
