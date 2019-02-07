@@ -1,0 +1,53 @@
+#!/usr/bin/env python3
+#
+# wla - WorkLog Archive（作業ログアーカイブ）
+#
+# Usage:
+#   wla
+#
+# 1. junkフォルダへのパス取得
+# 2. yyyy-mm-dd-journal.mdを対象
+# 3. junkフォルダ内の worklog/yyyy/mm にコピーする
+#
+
+import sys
+import os
+import pathlib
+import shutil
+from datetime import date
+
+VAR_FOLDER_NAME = 'var'
+JUNK_FOLDER_NAME = 'junk'
+WORKLOG_FOLDER_NAME = 'worklog'
+JOURNAL_FILE_NAME_SUFFIX = '-journal.md'
+JOURNAL_FILE_NAME_PATTERN = '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+
+try:
+  emacsHome = os.environ['EMACS_HOME']
+except KeyError:
+  sys.stderr.write('Error: "EMACS_HOME" is not defind\n')
+  sys.exit(1)
+
+varPath = os.path.join(emacsHome, VAR_FOLDER_NAME)
+junkPath = os.path.join(varPath, JUNK_FOLDER_NAME)
+worklogPath = os.path.join(junkPath, WORKLOG_FOLDER_NAME)
+today = date.today()
+
+junk = pathlib.Path(junkPath)
+for j in junk.glob(JOURNAL_FILE_NAME_PATTERN + JOURNAL_FILE_NAME_SUFFIX):
+
+  # 当日分は無視
+  dateParts = j.name.rsplit('-', 1)[0]
+  if (today.isoformat() == dateParts):
+    continue
+
+  # 年月フォルダ作成
+  dymParts = dateParts.split('-')
+  dist = os.path.join(worklogPath, dymParts[0], dymParts[1])
+  try:
+    os.makedirs(dist, exist_ok=True)
+  except OSError as e:
+    sys.stderr.write('Error: Failed to create directory "{0}" ({1})\n'.format(dist, e))
+
+  shutil.move(str(j), os.path.join(dist, j.name))
+  print('move ' + os.path.join(dist, j.name))
