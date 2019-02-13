@@ -51,6 +51,7 @@
  '(markdown-list-indent-width 2)
  '(markdown-open-command "cygstart")
  '(open-junk-file-directory "~/.emacs.d/var/junk/%Y-%m-%d-%H%M%S." t)
+ '(org-web-tools-pandoc-sleep-time 2.0)
  '(package-selected-packages
    (quote
     (itail textile-mode highlight-indent-guides pocket-reader kotlin-mode restclient yaml-mode yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
