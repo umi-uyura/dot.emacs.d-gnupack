@@ -12,6 +12,11 @@
 #  - "--color never" ... 出力の色設定を無効化
 #
 
+if [ "$1" == "" ]; then
+  echo "No keywords specified"
+  exit
+fi
+
 WLS_OPTIONS=""
 
 if [ "$INSIDE_EMACS" = "" ]; then
