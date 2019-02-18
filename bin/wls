@@ -11,6 +11,11 @@
 #  option example:
 #  - "--color never" ... 出力の色設定を無効化
 #
+# Tips:
+#  - 検索結果のパス文字列をまとめて置換する
+#    > wls "$1" | sed -e "s|path1|path2|g"
+#
+
 
 if [ "$1" == "" ]; then
   echo "No keywords specified"
@@ -27,4 +32,4 @@ fi
 
 WORKLOG_DIR=$(cygpath -w "$EMACS_HOME/var/junk/worklog")
 
-rg --no-heading --vimgrep -n --ignore-case $WLS_OPTIONS $2 -- "$1" "$WORKLOG_DIR"
+rg --no-heading --vimgrep -n --ignore-case --no-column --path-separator '/' --sort path $WLS_OPTIONS $2 -- "$1" "$WORKLOG_DIR"
