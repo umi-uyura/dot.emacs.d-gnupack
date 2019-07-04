@@ -57,4 +57,5 @@
 (depends-on "itail")
 (depends-on "restclient")
 (depends-on "dashboard")
+(depends-on "all-the-icons")
 (depends-on "pocket-reader")

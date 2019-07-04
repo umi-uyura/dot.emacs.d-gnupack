@@ -561,7 +561,7 @@
 (dashboard-setup-startup-hook)
 (setq dashboard-startup-banner 'logo)
 (setq dashboard-items '((projects . 10)
-                        (bookmarks . 10)
+                        (bookmarks . 20)
                         (recents  . 10)))
 
 
@@ -759,6 +759,13 @@
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
 
 (add-to-list 'auto-mode-alist '("\\.textile\\'" . textile-mode))
+
+
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
+;;; @ all-the-icons
+;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
+
+(require 'all-the-icons)
 
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;

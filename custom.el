@@ -19,6 +19,9 @@
  '(custom-safe-themes
    (quote
     ("2a7beed4f24b15f77160118320123d699282cbf196e0089f113245d4b729ba5d" "1db337246ebc9c083be0d728f8d20913a0f46edc0a00277746ba411c149d7fe5" default)))
+ '(dashboard-set-file-icons t)
+ '(dashboard-set-heading-icons t)
+ '(dashboard-set-navigator t)
  '(delete-selection-mode t)
  '(dired-dnd-protocol-alist nil)
  '(dired-dwim-target t)
@@ -54,7 +57,7 @@
  '(org-web-tools-pandoc-sleep-time 2.0)
  '(package-selected-packages
    (quote
-    (itail textile-mode highlight-indent-guides pocket-reader kotlin-mode restclient yaml-mode yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
+    (all-the-icons itail textile-mode highlight-indent-guides pocket-reader kotlin-mode restclient yaml-mode yasnippet wgrep-ag web-beautify visual-regexp undo-tree sass-mode ripgrep pug-mode pt open-junk-file markdown-toc json-mode js2-mode js-doc jdee gradle-mode google-translate ensime emojify emoji-cheat-sheet-plus dashboard ample-zen-theme ag)))
  '(pocket-reader-color-site nil)
  '(pocket-reader-color-title nil)
  '(pocket-reader-show-count 100)
