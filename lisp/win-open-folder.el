@@ -18,3 +18,9 @@
   "cmd CURRENT-DIRECTORY"
   (interactive)
   (process-query-on-exit-flag (start-process-shell-command "open folder in Command prompt" nil "cmd /C 'start /D .'")))
+
+;;; Windows Terminal でフォルダを開く
+(defun open-wt()
+  "cmd CURRENT-DIRECTORY"
+  (interactive)
+  (process-query-on-exit-flag (start-process-shell-command "open folder in Windows Termianl" nil "cmd /C 'wt -d .'")))

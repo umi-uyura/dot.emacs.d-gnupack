@@ -737,6 +737,7 @@
 (define-key global-map (kbd "C-c o f") 'open-explorer)
 (define-key global-map (kbd "C-c o t") 'open-cmd)
 (define-key global-map (kbd "C-c o i") 'open-cygwin)
+(define-key global-map (kbd "C-c o w") 'open-wt)
 
 
 ;;; ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;; ;;;
