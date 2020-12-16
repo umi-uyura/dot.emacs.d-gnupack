@@ -1,53 +1,52 @@
-#!/usr/bin/env python3
+#!/bin/sh
+
 #
 # wla - WorkLog Archive（作業ログアーカイブ）
 #
+# 当日以前の作業ログを保管用フォルダにアーカイブ（移動）する
+#
 # Usage:
-#   wla
+#   wlaa
 #
 # 1. junkフォルダへのパス取得
 # 2. yyyy-mm-dd-journal.mdを対象
 # 3. junkフォルダ内の worklog/yyyy/mm にコピーする
 #
 
-import sys
-import os
-import pathlib
-import shutil
-from datetime import date
+JUNK_FOLDER_NAME='junk'
+WORKLOG_FOLDER_NAME='worklog'
+JOURNAL_FILE_NAME_SUFFIX='-journal.md'
+JOURNAL_FILE_NAME_PATTERN='[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-journal.md'
 
-VAR_FOLDER_NAME = 'var'
-JUNK_FOLDER_NAME = 'junk'
-WORKLOG_FOLDER_NAME = 'worklog'
-JOURNAL_FILE_NAME_SUFFIX = '-journal.md'
-JOURNAL_FILE_NAME_PATTERN = '[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]'
+if [ -z "$EMACS_HOME" ]; then
+  echo Error: "EMACS_HOME" is not defind
+  exit
+fi
 
-try:
-  emacsHome = os.environ['EMACS_HOME']
-except KeyError:
-  sys.stderr.write('Error: "EMACS_HOME" is not defind\n')
-  sys.exit(1)
+EMACS_HOME_CYG=`cygpath -u $EMACS_HOME`
+VAR_FOLDER_PATH="$EMACS_HOME_CYG/var"
+JUNK_FOLDER_PATH="$VAR_FOLDER_PATH/junk"
+WORKLOG_FOLDER_PATH="$JUNK_FOLDER_PATH/worklog"
 
-varPath = os.path.join(emacsHome, VAR_FOLDER_NAME)
-junkPath = os.path.join(varPath, JUNK_FOLDER_NAME)
-worklogPath = os.path.join(junkPath, WORKLOG_FOLDER_NAME)
-today = date.today()
+TODAY=`date -Idate`
 
-junk = pathlib.Path(junkPath)
-for j in junk.glob(JOURNAL_FILE_NAME_PATTERN + JOURNAL_FILE_NAME_SUFFIX):
+for file in `\find $JUNK_FOLDER_PATH/* -maxdepth 1 -type f -name $JOURNAL_FILE_NAME_PATTERN`; do
+  BASENAME=`basename $file`
 
-  # 当日分は無視
-  dateParts = j.name.rsplit('-', 1)[0]
-  if (today.isoformat() == dateParts):
+  # 当日分は対象外
+  if [ `echo $BASENAME | grep $TODAY` ]; then
     continue
+  fi
 
-  # 年月フォルダ作成
-  dymParts = dateParts.split('-')
-  dist = os.path.join(worklogPath, dymParts[0], dymParts[1])
-  try:
-    os.makedirs(dist, exist_ok=True)
-  except OSError as e:
-    sys.stderr.write('Error: Failed to create directory "{0}" ({1})\n'.format(dist, e))
+  YMD=( `echo $BASENAME | tr '-' ' '` )
 
-  shutil.move(str(j), os.path.join(dist, j.name))
-  print('move ' + os.path.join(dist, j.name))
+  WORKLOG_DEST="$WORKLOG_FOLDER_PATH/${YMD[0]}/${YMD[1]}"
+
+  # アーカイブ用年月フォルダ作成
+  if [ ! -d $WORKLOG_DEST ]; then
+    mkdir -p $WORKLOG_DEST
+  fi
+
+  echo move $WORKLOG_DEST/$BASENAME
+  mv $file $WORKLOG_DEST
+done
