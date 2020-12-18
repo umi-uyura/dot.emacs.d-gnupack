@@ -6,16 +6,13 @@
 # 当日以前の作業ログを保管用フォルダにアーカイブ（移動）する
 #
 # Usage:
-#   wlaa
+#   wla
 #
 # 1. junkフォルダへのパス取得
 # 2. yyyy-mm-dd-journal.mdを対象
 # 3. junkフォルダ内の worklog/yyyy/mm にコピーする
 #
 
-JUNK_FOLDER_NAME='junk'
-WORKLOG_FOLDER_NAME='worklog'
-JOURNAL_FILE_NAME_SUFFIX='-journal.md'
 JOURNAL_FILE_NAME_PATTERN='[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-journal.md'
 
 if [ -z "$EMACS_HOME" ]; then
@@ -30,7 +27,7 @@ WORKLOG_FOLDER_PATH="$JUNK_FOLDER_PATH/worklog"
 
 TODAY=`date -Idate`
 
-for file in `\find $JUNK_FOLDER_PATH/* -maxdepth 1 -type f -name $JOURNAL_FILE_NAME_PATTERN`; do
+for file in `find $JUNK_FOLDER_PATH/* -maxdepth 1 -type f -name "$JOURNAL_FILE_NAME_PATTERN"`; do
   BASENAME=`basename $file`
 
   # 当日分は対象外

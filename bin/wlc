@@ -10,9 +10,6 @@
 #   wlc
 #
 
-JUNK_FOLDER_NAME='junk'
-WORKLOG_FOLDER_NAME='worklog'
-JOURNAL_FILE_NAME_SUFFIX='-journal.md'
 JOURNAL_FILE_NAME_PATTERN='[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]-journal.md'
 
 if [ -z "$EMACS_HOME" ]; then
@@ -27,13 +24,12 @@ WORKLOG_FOLDER_PATH="$JUNK_FOLDER_PATH/worklog"
 
 TODAY=`date -Idate`
 TODAY_YMD=( `echo $TODAY | tr '-' ' '` )
-LATEST_JOURNAL=`find $JUNK_FOLDER_PATH/* -maxdepth 1 -type f -name $JOURNAL_FILE_NAME_PATTERN | tail -n 1`
+LATEST_JOURNAL=`\find $JUNK_FOLDER_PATH/* -maxdepth 1 -type f -name "$JOURNAL_FILE_NAME_PATTERN" | tail -n 1`
 
 if [ -z "$LATEST_JOURNAL" ]; then
   touch "$JUNK_FOLDER_PATH/${TODAY_YMD[0]}-${TODAY_YMD[1]}-${TODAY_YMD[2]}-journal.md"
-  exit
+else
+  cp "$LATEST_JOURNAL" "$JUNK_FOLDER_PATH/${TODAY_YMD[0]}-${TODAY_YMD[1]}-${TODAY_YMD[2]}-journal.md"
 fi
-
-cp "$LATEST_JOURNAL" "$JUNK_FOLDER_PATH/${TODAY_YMD[0]}-${TODAY_YMD[1]}-${TODAY_YMD[2]}-journal.md"
 
 echo create "$JUNK_FOLDER_PATH/${TODAY_YMD[0]}-${TODAY_YMD[1]}-${TODAY_YMD[2]}-journal.md"
