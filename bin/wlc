@@ -5,6 +5,7 @@
 #
 # 当日の作業ログファイルを作成する
 # 当日以前の作業ログがある場合は、それをコピーする
+# 先頭の日付を当日に置換する
 #
 # Usage:
 #   wlc
@@ -24,6 +25,7 @@ WORKLOG_FOLDER_PATH="$JUNK_FOLDER_PATH/worklog"
 
 TODAY=`date -Idate`
 TODAY_YMD=( `echo $TODAY | tr '-' ' '` )
+TODAY_W_WEEKDAY=`date "+%Y.%m.%d (%a)"`
 LATEST_JOURNAL=`\find $JUNK_FOLDER_PATH/* -maxdepth 1 -type f -name "$JOURNAL_FILE_NAME_PATTERN" | tail -n 1`
 
 if [ -z "$LATEST_JOURNAL" ]; then
@@ -33,3 +35,5 @@ else
 fi
 
 echo create "$JUNK_FOLDER_PATH/${TODAY_YMD[0]}-${TODAY_YMD[1]}-${TODAY_YMD[2]}-journal.md"
+
+sed -i -e "1s/.*/${TODAY_W_WEEKDAY}/" "$JUNK_FOLDER_PATH/${TODAY_YMD[0]}-${TODAY_YMD[1]}-${TODAY_YMD[2]}-journal.md"
