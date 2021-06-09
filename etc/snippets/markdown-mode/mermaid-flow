@@ -1,0 +1,7 @@
+# name : Mermaid Flowchart
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+\`\`\`mermaid
+graph LR
+  hoge --> fuga
+\`\`\`

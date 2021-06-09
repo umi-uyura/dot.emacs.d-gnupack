@@ -1,0 +1,12 @@
+# name : Mermaid Ganttchart
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+\`\`\`mermaid
+gantt
+dateFormat  YYYY-MM-DD
+title $0
+
+section section1
+task1   :2021-01-01, 2021-01-31
+task2   :2021-02-01, 2021-02-28
+\`\`\`
